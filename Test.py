@@ -38,6 +38,5 @@ class TestComplex(unittest.TestCase):
         result = Complex(1,2).polarform()
         self.assertEqual(result, '2.2360679775(cos(26.5650511771) + sin(26.5650511771)i)')
 
-if __name__ == "__main__":
-    unittest.main()
+
 

@@ -10,7 +10,4 @@ class TestComplex(TestCase):
                 self.assertTrue(succeed("Complex"))
             else:
                 self.assertFalse(incorrect_output())
-        except ImportError:
-            self.assertFalse(no_function_found("angles"))
-        except AssertionError:
-            self.assertFalse(incorrect_output())
+     

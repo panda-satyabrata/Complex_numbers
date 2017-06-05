@@ -1,7 +1,7 @@
-from unittest import *
+from unittest import Testcase
 from Complex import Complex
 
-class TestComplex(unittest.TestCase): 
+class TestComplex(TestCase): 
     def test_sumofcomplex(self):
         result = Complex(1,2) + Complex(2,3)
         self.assertEqual(result, Complex(3,5))

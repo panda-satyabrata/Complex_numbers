@@ -5,4 +5,4 @@ class TestComplex(TestCase):
         from Complex import Complex
         
         result = Complex(1,1) + Complex(2,2)
-        self.assertTrue(result, 3+3i)
+        self.assertTrue(result, Complex(3,3))

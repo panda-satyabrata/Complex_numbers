@@ -3,8 +3,8 @@ from Complex import Complex
 
 class TestComplex(TestCase): 
     def test_sumofcomplex(self):
-        result = Complex(1,2) + Complex(2,3)
-        self.assertEqual(result, Complex(3,5))
+        result = Complex(1,2).real + Complex(2,3).real
+        self.assertEqual(result, Complex(3,5).real)
         
     def test_diffofcomplex(self):
         result = Complex(1,2) - Complex(2,3)

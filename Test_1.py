@@ -7,5 +7,3 @@ class TestComplex(TestCase):
         if isinstance(result, dict):
             self.assertEqual(result, 45)
             self.assertTrue(succeed("Complex"))
-        else:
-            self.assertFalse("Fatal")

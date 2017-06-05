@@ -5,5 +5,5 @@ class TestComplex(TestCase):
         from Complex import Complex
         result = Complex(1,1) + Complex(2,2)
         if isinstance(result, Complex):
-            self.assertEqual(result, Complex(3,3))
+            self.assertEqual(result, 3+3i)
             self.assertTrue(succeed("Complex"))

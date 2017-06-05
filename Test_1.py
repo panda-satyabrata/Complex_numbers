@@ -8,4 +8,4 @@ class TestComplex(TestCase):
             self.assertEqual(result, 45)
             self.assertTrue(succeed("Complex"))
         else:
-            self.assertFalse(incorrect_output())
+            self.assertFalse("Fatal")

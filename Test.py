@@ -12,7 +12,7 @@ class TestComplex(TestCase):
         
     def test_productofcomplex(self):
         result = Complex(1,2) * Complex(2,3)
-        self.assertEqual(result, Complex(3,3))
+        self.assertEqual(result, Complex(-4,7))
         
     def test_conjugateofcomplex(self):
         result = Complex(1,2).conjugate()
@@ -28,7 +28,7 @@ class TestComplex(TestCase):
         
     def test_divisionofcomplex(self):
         result = Complex(1,2) / Complex(2,3)
-        self.assertEqual(result, Complex(0.6153846153846154,0.07692307692307693))
+        self.assertEqual(result, Complex(0.6153846153846154, 0.07692307692307693))
         
     def test_anglerofcomplex(self):
         result = Complex(1,2).angle()

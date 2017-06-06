@@ -46,7 +46,7 @@ class Complex(object):
     def __truediv__(self, other):
         num = self * other.conjugate()
         den = (other.abs())**2
-        return complex(num.real/den, num.img/den)
+        return Complex(num.real/den, num.img/den)
 
     def angle(self):
         angle_in_radian = atan(self.real/self.img)
@@ -64,7 +64,7 @@ class Complex(object):
         return "%s(cos(%s) + sin(%s)i)" % (self.abs(), self.angle(), self.angle())
 
     def __eq__(self, other):
-        return self.real == other.real and self.img == other.img
+        return self.__dict__ == other.__dict__
         
     def __ne__(self, other):
         return not self == other

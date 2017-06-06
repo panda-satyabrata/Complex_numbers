@@ -63,6 +63,13 @@ class Complex(object):
     def polarform(self):
         return "%s(cos(%s) + sin(%s)i)" % (self.abs(), self.angle(), self.angle())
 
+    def __eq__(self, other):
+        return self.real == other.real and self.img == other.img
+        
+    def __ne__(self, other):
+        return not self == other
+
+
 
 
 

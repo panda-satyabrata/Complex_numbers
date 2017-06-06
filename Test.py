@@ -28,7 +28,7 @@ class TestComplex(TestCase):
         
     def test_divisionofcomplex(self):
         result = Complex(1,2) / Complex(2,3)
-        self.assertEqual(result, Complex(0.6153846153846154, 0.07692307692307693))
+        self.assertEqual(result, Complex(0.615384615385,0.0769230769231))
         
     def test_anglerofcomplex(self):
         result = Complex(1,2).angle()

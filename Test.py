@@ -1,10 +1,10 @@
-from unittest import *
+from unittest import TestCase
 from Complex import Complex
 
-class TestComplex(unittest.TestCase): 
+class TestComplex(TestCase): 
     def test_sumofcomplex(self):
-        result = Complex(1,2) + Complex(2,3)
-        self.assertEqual(result, Complex(3,5))
+        result = Complex(1,2).real + Complex(2,3).real
+        self.assertEqual(result, Complex(3,5).real)
         
     def test_diffofcomplex(self):
         result = Complex(1,2) - Complex(2,3)
@@ -38,6 +38,5 @@ class TestComplex(unittest.TestCase):
         result = Complex(1,2).polarform()
         self.assertEqual(result, '2.2360679775(cos(26.5650511771) + sin(26.5650511771)i)')
 
-if __name__ == "__main__":
-    unittest.main()
+
 

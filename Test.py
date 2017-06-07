@@ -1,5 +1,7 @@
 from unittest import TestCase
 from Complex import Complex
+from __future__ import division
+
 
 class TestComplex(TestCase): 
     def test_sumofcomplex(self):

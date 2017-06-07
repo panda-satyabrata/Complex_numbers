@@ -5,8 +5,6 @@ from math import atan, degrees
 
 class Complex(object):
 
-    from __future__ import division
-
     def __init__(self, real=0, img=0):
         self.real = real
         self.img = img

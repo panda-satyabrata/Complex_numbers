@@ -44,7 +44,7 @@ class Complex(object):
         return self
 
     def __truediv__(self, other):
-        num = self * other.conjugate()
+        num = self.__mul__(other.conjugate())
         den = (other.abs())**2
         return Complex(num.real/den, num.img/den)
 

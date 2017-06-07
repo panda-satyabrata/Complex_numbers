@@ -1,6 +1,6 @@
+from __future__ import division
 from unittest import TestCase
 from Complex import Complex
-from __future__ import division
 
 
 class TestComplex(TestCase): 
